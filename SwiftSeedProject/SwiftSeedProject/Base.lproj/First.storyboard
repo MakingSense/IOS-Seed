@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DYP-ok-hYl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FIRST-->
+        <scene sceneID="EDc-bR-YIA">
+            <objects>
+                <viewController storyboardIdentifier="SourceListVC" title="FIRST" id="DYP-ok-hYl" customClass="SourceListViewController" customModule="SwiftSeedProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPQ-e6-nZK"/>
+                        <viewControllerLayoutGuide type="bottom" id="hx1-pj-XHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H0h-U0-KN0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-4h-mx1" customClass="MSButton" customModule="SwiftSeedProject" customModuleProvider="target">
+                                <rect key="frame" x="163" y="220" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.37555182170000001" green="0.58603069149999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3Ab-JX-bLG"/>
+                                    <constraint firstAttribute="width" secondItem="6ge-4h-mx1" secondAttribute="height" multiplier="1:1" id="mof-L1-oID"/>
+                                    <constraint firstAttribute="height" constant="50" id="zvg-re-UZw"/>
+                                </constraints>
+                                <state key="normal" title="GET">
+                                    <color key="titleColor" red="0.97064685369199988" green="0.96593010385805567" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.3755518216771131" green="0.58603069145556219" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUX-oA-Yfg" customClass="MSButton" customModule="SwiftSeedProject" customModuleProvider="target">
+                                <rect key="frame" x="87" y="220" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.37555182170000001" green="0.58603069149999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="w7h-lw-Eba"/>
+                                    <constraint firstAttribute="width" constant="50" id="xQ1-J9-o2P"/>
+                                </constraints>
+                                <state key="normal" title="PUT">
+                                    <color key="titleColor" red="0.97064685370000003" green="0.9659301039" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.37555182170000001" green="0.58603069149999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="105-7q-uYu">
+                                <rect key="frame" x="79" y="320" width="217" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="XBy-Sc-1J5"/>
+                                    <constraint firstAttribute="height" constant="30" id="gpP-vA-PrK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2P-Nb-K5k">
+                                <rect key="frame" x="79" y="377" width="217" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="geS-ro-yuo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLY-fU-vNp" customClass="MSButton" customModule="SwiftSeedProject" customModuleProvider="target">
+                                <rect key="frame" x="235" y="220" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.37555182170000001" green="0.58603069149999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Gom-Eo-F8D"/>
+                                    <constraint firstAttribute="height" constant="50" id="gfq-Wq-9y0"/>
+                                </constraints>
+                                <state key="normal" title="POST">
+                                    <color key="titleColor" red="0.97064685370000003" green="0.9659301039" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.37555182170000001" green="0.58603069149999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.40477055649999999" blue="0.50730378809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aUX-oA-Yfg" firstAttribute="top" secondItem="6ge-4h-mx1" secondAttribute="top" id="1TJ-vc-PGV"/>
+                            <constraint firstItem="105-7q-uYu" firstAttribute="centerX" secondItem="H0h-U0-KN0" secondAttribute="centerX" id="4jf-L3-S0J"/>
+                            <constraint firstItem="105-7q-uYu" firstAttribute="top" secondItem="yLY-fU-vNp" secondAttribute="bottom" constant="50" id="6TL-bN-Oj3"/>
+                            <constraint firstItem="o2P-Nb-K5k" firstAttribute="leading" secondItem="105-7q-uYu" secondAttribute="leading" id="T3e-hZ-S4e"/>
+                            <constraint firstItem="6ge-4h-mx1" firstAttribute="centerX" secondItem="H0h-U0-KN0" secondAttribute="centerX" id="UVA-fV-QJP"/>
+                            <constraint firstItem="yLY-fU-vNp" firstAttribute="leading" secondItem="6ge-4h-mx1" secondAttribute="trailing" constant="22.5" id="XVj-NH-i9E"/>
+                            <constraint firstItem="6ge-4h-mx1" firstAttribute="leading" secondItem="aUX-oA-Yfg" secondAttribute="trailing" constant="25.5" id="dVU-OS-veO"/>
+                            <constraint firstItem="6ge-4h-mx1" firstAttribute="top" secondItem="cPQ-e6-nZK" secondAttribute="bottom" constant="200" id="eql-Jf-NYc"/>
+                            <constraint firstItem="o2P-Nb-K5k" firstAttribute="top" secondItem="105-7q-uYu" secondAttribute="bottom" constant="27" id="v6e-cw-Ju2"/>
+                            <constraint firstItem="yLY-fU-vNp" firstAttribute="top" secondItem="6ge-4h-mx1" secondAttribute="top" id="w35-Xx-vnX"/>
+                            <constraint firstItem="o2P-Nb-K5k" firstAttribute="trailing" secondItem="105-7q-uYu" secondAttribute="trailing" id="xJD-rx-jRL"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="dipTag" value="SourceListVC"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="emailTextField" destination="o2P-Nb-K5k" id="XBl-Ys-l9G"/>
+                        <outlet property="getButton" destination="6ge-4h-mx1" id="OWL-k8-O7W"/>
+                        <outlet property="nameTextField" destination="105-7q-uYu" id="mow-2O-blz"/>
+                        <outlet property="postButton" destination="yLY-fU-vNp" id="GYC-au-15F"/>
+                        <outlet property="putButton" destination="aUX-oA-Yfg" id="h0d-3x-OvQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wP4-XS-m2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1544.8" y="745.27736131934034"/>
+        </scene>
+        <!--News Feed Collection View Controller-->
+        <scene sceneID="EdE-55-Xbz">
+            <objects>
+                <collectionViewController storyboardIdentifier="NewsFeedCollectionViewController" id="Cr6-Lv-OFc" customClass="NewsFeedCollectionViewController" customModule="SwiftSeedProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="tp1-ed-oec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vzw-cY-hqC">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Cr6-Lv-OFc" id="p4r-l4-eRx"/>
+                            <outlet property="delegate" destination="Cr6-Lv-OFc" id="aIW-Pk-R2w"/>
+                        </connections>
+                    </collectionView>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="NewsFeedCollectionViewController"/>
+                    </userDefinedRuntimeAttributes>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmG-dJ-iP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="745"/>
+        </scene>
+    </scenes>
+</document>

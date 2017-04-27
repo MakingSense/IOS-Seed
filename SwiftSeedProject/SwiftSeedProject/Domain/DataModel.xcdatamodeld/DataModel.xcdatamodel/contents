@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Article" representedClassName="Article" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publishedAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="urlToImage" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="library" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Library" inverseName="articles" inverseEntity="Library" syncable="YES"/>
+    </entity>
+    <entity name="Broadcast" representedClassName="Broadcast" syncable="YES">
+        <relationship name="sources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Source" inverseName="broadcast" inverseEntity="Source" syncable="YES"/>
+    </entity>
+    <entity name="Library" representedClassName="Library" syncable="YES">
+        <attribute name="sortBy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="articles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Article" inverseName="library" inverseEntity="Article" syncable="YES"/>
+    </entity>
+    <entity name="Logo" representedClassName="Logo" syncable="YES">
+        <attribute name="large" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="medium" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="small" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="source" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Source" inverseName="logo" inverseEntity="Source" syncable="YES"/>
+    </entity>
+    <entity name="Source" representedClassName="Source" syncable="YES">
+        <attribute name="categoryRaw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryRaw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="languageRaw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sortByAvailable" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="broadcast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Broadcast" inverseName="sources" inverseEntity="Broadcast" syncable="YES"/>
+        <relationship name="logo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Logo" inverseName="source" inverseEntity="Logo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Article" positionX="115" positionY="-66" width="128" height="150"/>
+        <element name="Broadcast" positionX="-153" positionY="126" width="128" height="60"/>
+        <element name="Library" positionX="-164" positionY="-54" width="128" height="90"/>
+        <element name="Logo" positionX="-27" positionY="90" width="128" height="105"/>
+        <element name="Source" positionX="108" positionY="126" width="128" height="195"/>
+    </elements>
+</model>
